@@ -9,8 +9,9 @@ app.get('/', (req, res) => {
 })
 
 app.get('/drinks', (req, res) => {
-    res.send(drinks)
+    res.render("index.ejs", {drinks})
 })
+
 app.listen(PORT, () => {
     console.log(`listening on port ${PORT}`)
 })

@@ -42,4 +42,4 @@ const drinks = [
   ]
 
   // exporting the data 
-  module.exports = drinks
+  module.exports = drinks;

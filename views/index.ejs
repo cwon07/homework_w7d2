@@ -7,9 +7,20 @@
     <title>Document</title>
     <style type="text/css">
         body {
-                color: steelblue;
-                background-color: blanchedalmond;
+                color: rgb(49, 54, 59);
+                background-color: rgb(236, 200, 146);
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                
             }
+        ul {
+            list-style: none;
+            font-size: 25px;
+            margin: .1em;
+        }
+        a:link, a:visited {
+            text-decoration: none;
+            color: rgb(6, 39, 71)
+        }
     </style>
 </head>
 <body>
@@ -17,7 +28,8 @@
 
     <ul>
         <% for(let i = 0; i < drinks.length; i++){ %>
-            <li><a href="/drinks/<%= i %>"><%= drinks[i].name %></a></li>
+            <li><a href="/drinks/<%= i %>"> &#127866 <%= drinks[i].name.charAt(0).toUpperCase() 
+            + drinks[i].name.slice(1) %></a></li>
         <% } %>
     
     </ul>
